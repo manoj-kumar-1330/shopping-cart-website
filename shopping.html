@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Application</title>
+    <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+    <nav>
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#products" onclick="showSection('products')">Products</a>
+        <a href="#cart" onclick="showSection('cart')">Cart</a>
+    </nav>
+    <div id="home" class="container">
+        <h1>Welcome to Our Store</h1>
+    </div>
+    <div id="products" class="container" style="display: none; align-content: center;">
+        <h1>Products</h1>
+        <div id="product-list"></div>
+    </div>
+    <div id="cart" class="container" style="display: none;">
+        <h1>Your Cart</h1>
+        <ul id="cart-items"></ul>
+        <p>Total: Rs.<span id="total-price">0.00</span></p>
+    </div>
+     <script src="shopping.js"></script>
+      </body>
+</html>
